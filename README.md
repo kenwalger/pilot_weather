@@ -10,14 +10,14 @@ API (instructions for the API http://services.faa.gov/).
 
 From a command prompt, run the app using
 
-`python pilot_weather.py` + the three character code (IATA) of the airport of 
-which you want to check the weather.
+`python pilot_weather.py -a` + the three character code (IATA) of the airport
+ of which you want to check the weather.
 
 ###Example
 
 To check the status of Portland International Airport in Portland, Oregon (PDX) you would use:
 
-`python pilot_weather.py pdx`
+`python pilot_weather.py -a PDX`
 
 
 ###Example of Returned Data

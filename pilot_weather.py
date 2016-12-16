@@ -18,7 +18,12 @@ import requests
 
 parser = argparse.ArgumentParser(description='Get current weather data from '
                                              'U.S. airports.')
-parser.add_argument('IATA_code', type=str, help='IATA code for U.S. airport')
+parser.add_argument('-a',
+                    '--airport',
+                    required=True,
+                    type=str,
+                    help='IATA code for U.S. airport'
+                    )
 airport_code = parser.parse_args()
 
 
@@ -79,4 +84,4 @@ def get_airport_info(airport):
 
 
 if __name__ == '__main__':
-    get_airport_info(airport_code.IATA_code)
+    get_airport_info(airport_code.airport)
